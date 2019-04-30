@@ -1,0 +1,89 @@
+/*Cathy Chang, Danny Perkins
+cc5ar, dgp3sy*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.menu{
+	width: 100%;
+	height: 50px;
+	background-color: #B7D5F9;
+}
+
+ul{
+	list-style: none;
+	margin-top: 0;
+	text-align: center;
+}
+
+li{
+	display: inline-block;
+	margin-top: 17px;
+	margin-right: 100px;
+	color: white;
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bolder;
+}
+
+.image{
+  background: url("http://localhost/a-4/snowy-mountain.JPG");
+  width: 1200px;
+  height:100%;
+  background-size: cover; /* or contain depending on what you want */
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align:center;
+  margin:auto;
+  padding:0;
+  margin-top: 20px;
+  position: relative;
+}
+/* Style the links inside the navigation bar */
+.menu a {
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.menu a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.menu a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.login{
+  text-align: center;  
+  margin: auto;
+  border: 3px solid black;
+  padding: 10px;
+  display: inline-block;
+
+}
+
+.logincenter {
+	padding: 30px;
+	text-align: center;
+}
+
+.primary-footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:30px;   /* Height of the footer */
+   background:#89A7A8;
+}
+
+
+
+
+
+
+
+a[href="newUser.html"] {
+  font-size: 12px;
+}

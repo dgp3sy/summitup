@@ -1,0 +1,85 @@
+<!--Cathy Chang, Danny Perkins
+cc5ar, dgp3sy-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<link rel='stylesheet' href='loginstyles.css' type='text/css' />
+	
+</head>
+<body background = "login_image.jpg">
+	<div class="menu">
+		<ul>
+			<li><a href="./index.html">home</a></li>
+		<li><a href="./list.php">my list</a></li>
+		<li><a href="./tophikes.html">top rated</a></li>
+		<li><a href="./review.php">write a review</a></li>
+		<li><a href="./login.html">login</a></li>
+		<li><a href="http://localhost:4200/">connect</a><li>
+
+		</ul>
+	</div>
+
+	<div class="image">
+			<div class="logincenter">
+			 	<div class="login">
+				 <form name = "login" action="cookie-login.php" method="POST" >
+				    <label>Email: </label> 
+				    <input type="text" name = "email" id="email" autofocus required />
+				    <div id="email-msg" class="feedback"></div>  <br/>
+				    <label>Password: </label> 
+				    <input type="password" name = "password" id="pwd" required />
+				    <div id="pwd-msg" class="feedback"></div>  <br/>
+				    <input type="submit" value="Sign in" />  
+				  </form>
+				  <a href="newUser.php">
+				  	<p>Create an Account</p>
+				  </a>
+				</div>
+			</div>
+		</div>
+
+
+	<footer class="primary-footer container">
+      <small class="copyright">&copy; Catherine Chang and Daniel Perkins | 2019 | All Rights Reserved</small>
+      <nav class="nav">
+      </nav>
+    </footer>
+
+   <!-- use input type="submit" with the required attribute -->
+<script>
+	function validateEmail() {
+         var emailID = document.login.Email.value;
+         var msg = document.getElementById("email-msg")
+         atpos = emailID.indexOf("@");
+         dotpos = emailID.lastIndexOf(".");
+         
+         if (atpos < 1 || ( dotpos - atpos < 2 ) && emailID.length > 0) {
+            msg.textContent = "Please enter a valid email ID"
+         }
+         else {
+         	msg.textContent = "";
+         }
+    }
+   	
+	function checkPassword(len) {
+	  var numbers = /[0-9]/g;
+	  var symbols = /[!@#$%&*?]/g
+	  var msg = document.getElementById("pwd-msg"); 
+      if (passwd.value.length < len && passwd.value.length > 0)
+        msg.textContent = "Password must be longer than " + len + " characters";
+      else if (passwd.value.match(numbers) == null) 
+     	msg.textContent = "Password must contain at least one number";
+      else if (passwd.value.match(symbols) == null)
+      	msg.textContent = "Password must contain one of the following symbols: !@#$%&*?"
+      else
+         msg.textContent = "";
+   }
+   	var passwd = document.getElementById("pwd");  
+   	var e_mail = document.getElementById("email");
+   	passwd.addEventListener('blur', function() {checkPassword(8);}, true);
+   	e_mail.addEventListener('blur', function() {validateEmail();}, true);
+  </script>
+
+</body>

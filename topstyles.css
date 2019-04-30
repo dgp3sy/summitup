@@ -1,0 +1,389 @@
+/*****************************************/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/**************************************/
+
+body {
+  background: #003333;
+  /* background-image: url("filename.gif") */
+     /* font color */
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+
+.container {
+  margin: 0 auto;
+  /* width: 960px; */         /* initial design */
+  width: 100%;                /* responsive */	
+  padding-left: 30px;
+  padding-right: 30px;
+}
+ 
+ 
+ .menu{
+  width: 100%;
+  height: 50px;
+  background-color: #9eccd3;
+}
+ul{
+  list-style: none;
+  margin-top: 0;
+  text-align: center;
+}
+
+li{
+  display: inline-block;
+  margin-top: 17px;
+  margin-right: 100px;
+  color: white;
+}
+
+/* Style the links inside the navigation bar */
+.menu a {
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.menu a:hover {
+  background-color: #fff;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.menu a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+ 
+.grid {
+  margin: 0 auto;
+  /* width: 960px; */         /* initial design */
+  width: 100%;                /* responsive */	
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+}
+ 
+/*.content-col {
+  display: inline-block;	  
+} */
+.content-col {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+}
+
+.content-row {
+  background: #ffffff;
+  padding: 66px 0 44px 0;
+}
+
+.subtitle {
+  color: #003333;	
+  font-size: 21px;
+}
+
+h1, h3, h4, h5, p {
+  margin-bottom: 22px;
+}
+
+h1 {
+  color: #ccffcc;	
+  font-size: 36px;
+  line-height: 44px;
+}
+
+h2 {
+  color: #ccffcc;	
+  font-size: 24px;
+  line-height: 44px;
+}
+
+h3 {
+  color: #ccffcc;	
+  font-size: 21px;
+}
+
+h4 {
+  color: #ccffcc;	
+  font-size: 18px;
+}
+
+h5 {
+  color: #a9b2b9;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+a {
+  color: #648880;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a9b2b9;
+}
+
+p a {
+  border-bottom: 1px solid #dfe2e5;
+}
+
+.primary-header a, .primary-footer a {
+   color: #9eccd3;
+}
+
+.primary-header a:hover, .primary-footer a:hover {
+  color: #9eccd3;
+}
+
+.logo {  
+  float: left;
+  font-size: 48px;
+  font-weight: 100;
+  letter-spacing: .5px;
+  line-height: 44px;
+  padding: 40px 0 22px 0;
+  text-transform: uppercase;
+}
+
+.tagline {
+  margin: 66px 0 22px 0;
+  text-align: right;
+}
+
+.primary-nav {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+
+.primary-footer {
+  color: #9eccd3;
+  font-size: 14px;
+  padding-bottom: 44px;
+  padding-top: 44px;
+}
+
+.copyright {
+  float: left;
+  color: #9eccd3;
+}
+
+.nav {
+  text-align: right;
+  width: 100%;
+}
+
+.nav li {
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: top;
+}
+
+.title {
+  color: #fff;
+  line-height: 44px;
+  padding: 22px 48px 66px 120px;
+  text-align: center;
+}
+
+.title h2 {
+  font-size: 36px;
+}
+
+.title p {
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.highlight a:hover h3 {
+  color: #a9b2b9;
+}
+
+.highlight img {
+  border-radius: 5px;
+  margin-bottom: 22px;
+  max-width: 100%;
+  border: solid;
+  padding: 20px 30px 20px 30px;
+  display: inline-block;
+}
+
+#btn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: white; /* Set a background color */
+  color: black; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#btn:hover {
+  background-color: #A8A8A8; /* Add a dark-grey background on hover */
+}
+
+/**************************************/
+/*   css to make the page responsive  */
+ 
+/* ensure that all HTML elements have the box-sizing property set to border-box. 
+   This makes sure that the padding and border are included in the total width 
+   and height of the elements. */ 
+* {
+  box-sizing: border-box;
+}
+
+/* define columns width    --- default width */  
+.col-1 { width: 8.33%; }
+.col-2 { width: 16.66%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.33%; }
+.col-5 { width: 41.66%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.33%; }
+.col-8 { width: 66.66%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100%; }
+}
+
+
+/* set these columns to float left, and have a padding */
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+
+/*  using a media query to insert a breakpoint between tablets and mobile phones */
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+/*   .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;} */
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+.row { width: 100%; }
+
+/* change font and size with media queries */ 
+
+/* If the screen size is 600px or less, set the font-size and padding */
+@media only screen and (max-width: 600px) {
+  .title h2 {
+     font-size: 24px;
+  } 
+  .title p {
+     font-size: 20px;
+  }  
+  .logo {       
+     font-size: 36px;
+  }
+  .container {
+     padding-left: 24px;
+     padding-right: 20px;
+  }  
+  .title {  
+     line-height: 40px;
+     padding: 30px 20px 20px 40px;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  #fadeshow {
+    display: none;
+  }

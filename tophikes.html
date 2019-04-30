@@ -1,0 +1,81 @@
+<!--Cathy Chang and Danny Perkins
+  cc5ar and dgp3sy -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <link rel='stylesheet' href='topstyles.css' type='text/css' />
+</head>
+<body>
+  <div class="menu">
+    <ul>
+      <li><a href="./index.html">home</a></li>
+    <li><a href="./list.php">my list</a></li>
+    <li><a href="./tophikes.html">top rated</a></li>
+    <li><a href="./review.php">write a review</a></li>
+    <li><a href="./login.html">login</a></li>
+    <li><a href="http://localhost:4200/">connect</a><li>
+
+    </ul>
+  </div>
+
+  <button onclick="topFunction()" id="btn" title="Go to top">back to top</button>
+
+ <!-- highlight / showcase -->        
+    <section class="content-row row">
+      <div class="grid">
+      
+        <section class="highlight content-col col-3">
+          <a href="highlight1.html">
+            <img src="old_rag.png" alt="image showing highlight1"> <br/>
+            <font class="subtitle">Old Rag</font>
+          </a>
+          <p>Old Rag Mountain is a peak located within Shenandoah National Park and is the most popular hiking destination within the park.</p>
+          <label>Number of users who have visited this location: </label>
+          <div id="rag-count" class="feedback">100</div>
+          <button type="button" id="rag-button">Visited!</button>
+        </section>
+
+        <section class="highlight content-col col-3">
+          <a href="highlight2.html">
+            <img src="crabtree falls.png" alt="image showing highlight2"> <br/>
+            <font class="subtitle">Crabtree Falls</font>
+          </a>
+          <p>Crabtree Falls is one of the tallest sets of waterfalls in the United States east of the Mississippi River.</p>
+          <label>Number of users who have visited this location: </label>
+          <div id="crab-count" class="feedback">100</div>
+          <button type="button" id="crab-button">Visited!</button>
+        </section>
+ 
+        <section class="highlight content-col col-3">
+          <a href="highlight3.html">
+            <img src="McAfee Knob.png" alt="image showing highlight3"> <br/>
+            <font class="subtitle">McAfee Knob</font>
+          </a>
+          <p>McAfee Knob is known as the most photographed point of the Appalachian Trail.</p>
+          <label>Number of users who have visited this location: </label>
+          <div id="knob-count" class="feedback">100</div>
+          <button type="button" id="knob-button">Visited!</button>
+        </section>
+        
+      </div>
+    </section>   
+
+
+    <footer class="primary-footer container">
+      <small class="copyright">&copy; Catherine Chang and Daniel Perkins | 2019 | All Rights Reserved</small>
+      <nav class="nav">
+      </nav>
+    </footer>
+
+
+  
+
+
+  </div>
+<br><br>
+  <script src="tophikes.js"></script>
+
+  </body>
+  </html>

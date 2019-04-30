@@ -1,0 +1,109 @@
+/*Cathy Chang, Danny Perkins
+cc5ar, dgp3sy*/
+
+body{
+	font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	padding: 0;
+	margin:0;
+}
+
+.menu{
+	width: 100%;
+	height: 50px;
+	background-color: #B7D5F9;
+}
+
+ul{
+	list-style: none;
+	margin-top: 0;
+	text-align: center;
+}
+
+li{
+	display: inline-block;
+	margin-top: 17px;
+	margin-right: 100px;
+	color: white;
+}
+
+
+/* Style the links inside the navigation bar */
+.menu a {
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.menu a:hover {
+  background-color: #fff;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.menu a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+.image{
+	width: 100%;
+	height: 600px;
+	background: url("waterfall.jpg")no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	margin: 0;
+	position: relative;
+}
+
+
+.one {
+	color: white;
+	text-align: center;
+	padding-top: 165px;
+	font-size: 30px;
+	text-shadow: 2px 2px 4px #848383;
+	font-family: merriweather, serif;
+	font-style: normal;
+	font-weight: 900;
+}
+
+.center_text {
+	color: white;
+	text-align: center;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.form {
+  text-align: center;
+  text-shadow: #FFFFFF;
+}
+
+label {
+  font-weight: bolder;
+  color: #FFFFFF;
+
+}
+
+#error-msg {
+  color: white;
+  text-shadow: : 0 0 3px #A9A7A7;
+}
+
+#cityname {
+  width: 30%;
+}
+
+
+
+
+
+
+
+
