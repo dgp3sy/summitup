@@ -1,0 +1,97 @@
+
+<link rel="stylesheet" href="assets/forms.css">
+
+<body background = "http://localhost/a-4/angular_background.JPG" >
+  <div class="menu">
+    <ul>
+      <li><a href="http://localhost/a-4//index.html">home</a></li>
+    <li><a href="http://localhost/a-4//list.php">my list</a></li>
+    <li><a href="http://localhost/a-4//tophikes.html">top rated</a></li>
+    <li><a href="http://localhost/a-4//review.php">write a review</a></li>
+    <li><a href="http://localhost/a-4/login.html">login</a></li>
+    <li><a href="http://localhost:4200/">connect</a><li>
+
+    </ul>
+  </div>
+
+<div class="logincenter">
+    <div class="container">
+      <div [hidden] = "submitted">
+        <h1>Welcome {{model.name}}: tell us about yourself!</h1>
+
+        <div [ngStyle]="{'font-family': 'Helvetica'}">
+        <form (ngSubmit)="onSubmit()" #userform="ngForm" action="http://localhost/a-4/connect-database.php" method="POST">
+          <div class="form-group">
+            <label for="name">Name: </label>
+            <input type="text" class="form-control" id="name" 
+              required
+              [(ngModel)]="model.name" name="name">
+              <!-- UNCOMMENT FOR DEMO:{{model.name}} -->
+
+          </div>
+     
+          <div class="form-group">
+            <label for="state">State:</label>
+            <input type="text" class="form-control" id="state"
+            required
+            [(ngModel)]="model.state" name="state" value="back">
+          </div>
+
+          <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="text" class="form-control" id="age"
+            required
+            [(ngModel)]="model.age" name="age" value="back">
+          </div>
+
+          <div class="form-group">
+            <label for="hiker">Level of Experience:</label>
+            <select type="text" class="form-control" id="hiker">
+              <option *ngFor="let hike of hikers" [value]="hike" value="back">{{hike}} </option>
+            </select>
+          </div>
+     
+          <button type="submit" class="btn btn-success" (click)="senddata(userform.value)"
+          [disabled]="!userform.form.valid">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div [ngClass] = "['submitted']">
+ <div *ngIf="responsedata.name!='' ">
+     <b>You Submitted the Following: </b> <br/>
+     Name: {{ responsedata.name }} <br/>
+     Location: {{ responsedata.state }} <br/>
+     Age: {{ responsedata.age }} <br/>
+  </div>
+</div>
+
+<!--
+    <div *ngIf = "submitted">
+      <h2>You submitted the following:</h2>
+    <div class="row">
+        <div class="col-xs-3">Name: {{ model.name }} </div>
+    </div>
+  <div class="row">
+      <div class="col-xs-3">State: {{ model.state }}</div>
+  </div>
+  <div class="row">
+      <div class="col-xs-3">Age: {{ model.age }}</div>
+  </div>
+  <div class="row">
+      <div class="col-xs-3">Level of Experience: {{ model.hiker }}</div>
+  </div>
+  <br>
+    <button (click)="submitted=false" [ngClass]="['btn', 'btn-primary']">Edit</button>
+
+  </div>
+</div>-->
+
+ 
+
+</div>
+  <footer class="primary-footer">
+      <small class="copyright">&copy; Catherine Chang and Daniel Perkins | 2019 | All Rights Reserved</small>
+      <nav class="nav">
+      </nav>
+    </footer>
